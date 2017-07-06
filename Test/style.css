@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+
+}
+
+body {
+  overflow: hidden;
+  min-width: 20em;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+nav {
+	margin: 0 auto;
+  width: 72%;
+  max-width: 35em;
+}
+
+nav ul {
+	position: relative;
+	padding: 50%;
+	max-width: 0;
+  max-height: 0;
+	list-style: none;
+	background: white;
+}
+nav li {
+	position: absolute;
+  /*SPINNING ANIMATION*/
+	/*transition: .2s;*/
+}
+.slice {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+  left: 0;
+	width: 50%;
+  height: 50%;
+	transform-origin: 100% 100%;
+}
+.game {
+	top: 24%;
+  left: 24%;
+	width: 52%;
+  height: 52%;
+	background: white;
+}
+.but01 {
+  transform: skewX(50deg);
+}
+.but02 {
+  transform: rotate(40deg) skewX(50deg);
+}
+.but03 {
+  transform: rotate(80deg) skewX(50deg);
+}
+.but04 {
+  transform: rotate(120deg) skewX(50deg);
+}
+.but05 {
+  transform: rotate(160deg) skewX(50deg);
+}
+.but06 {
+  transform: rotate(-160deg) skewX(50deg);
+}
+.but07 {
+  transform: rotate(-120deg) skewX(50deg);
+}
+.but08 {
+  transform: rotate(-80deg) skewX(50deg);
+}
+.but09 {
+  transform: rotate(-40deg) skewX(50deg);
+}
+.magnifiable {
+  height: 100%;
+}
+
+
+.slice label {
+	display: block;
+	width: 200%; height: 200%;
+	transform: skew(-50deg) rotate(-70deg);
+	opacity: 1;
+	color: transparent;
+}
+
+.but01 label {
+  background: magenta;
+}
+.but02 label {
+  background: yellow;
+}
+.but03 label {
+  background: #ffb038;
+}
+.but04 label {
+  background: cyan;
+}
+.but05 label {
+  background: #23a59e;
+}
+.but06 label {
+  background: #dd3bf4;
+}
+.but07 label {
+  background: #fd2a6b;
+}
+.but08 label {
+  background: #272462;
+}
+.but09 label {
+  background: #1476cd;
+}
+.slice label:hover:after { opacity: .2; }
+
+
+.button01:hover ~ nav .but01 {
+  transform: skewX(50deg) scale(1.20);
+}
+.button02:hover ~ nav .but02 {
+  transform: rotate(40deg) skewX(50deg) scale(1.20);
+}
+.button03:hover ~ nav .but03 {
+  transform: rotate(80deg) skewX(50deg) scale(1.20);
+}
+.button04:hover ~ nav .but04 {
+  transform: rotate(120deg) skewX(50deg) scale(1.20);
+}
+.buton05:hover ~ nav .but05 {
+  transform: rotate(160deg) skewX(50deg) scale(1.20);
+}
+.button06:hover ~ nav .but06 {
+  transform: rotate(-160deg) skewX(50deg) scale(1.20);
+}
+.button07:hover ~ nav .but07 {
+  transform: rotate(-120deg) skewX(50deg) scale(1.20);
+}
+.button08:hover ~ nav .but08 {
+  transform: rotate(-80deg) skewX(50deg) scale(1.20);
+}
+.button09:hover ~ nav .but09 {
+  transform: rotate(-40deg) skewX(50deg) scale(1.20);
+}
+
+/*@media (min-width: 25em) { .slice label { font-size: 1em; line-height: 2.3; } }*/
+@media (min-width: 35em) { .slice label { font-weight: 700; line-height: 2.7; } }

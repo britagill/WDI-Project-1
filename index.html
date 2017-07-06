@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>test</title>
-  </head>
-  <body>
-    Hello
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="app.js" charset="utf-8"></script>
+</head>
+<body>
+
+
+
+  <div class="mainPage">
+    <div class="gameBoard">
+      
+      <div class="frontCircle"></div>
+      <div class="frontSecondCircle"></div>
+
+      <div id="1" class="board button1"></div>
+      <div id="2" class="board button2"></div>
+      <div id="3" class="board button3"> </div>
+      <div id="4" class="board button4"></div>
+    </div>
+
+    <div class="circle">
+      <p></p>
+    </div>
+
+  </div>
+
+  <div class="gameReset">
+    <button class="reset" onclick="reset">RESET</button>
+  </div>
+
+<!-- <div class="gameScore">
+  <button class="score">Round </button>
+</div> -->
+
+</body>
 </html>
